@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/
+
+### Get All Learners
+GET http://localhost:3000/api/learner/
+
+### GET SINGLE LEARNER by ID
+GET http://localhost:3000/api/learner/640335d34694289fd6dd972a
+
+
+### ADD LEARNER
+POST http://localhost:3000/api/learner/ 
+content-type: application/json
+
+{
+    "name": "Happy Doe",
+    "DateStarted": " 21 Oct 2015 ",
+    "DateEnded": "21 Oct 2018",
+    "Skills": "Angular 2, Node.js, React.js, MongoDb",
+    "Gender": "female",
+    "Image": "https://images.unsplash.com/photo-1630178836733-3d61d8974258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3R1ZGVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "StreamCohort": "PWD"
+}
+
+### Delete a Learner
+
+DELETE http://localhost:3000/api/learner/640335d34694289fd6dd972a
+
