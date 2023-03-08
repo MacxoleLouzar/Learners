@@ -10,5 +10,16 @@
 }
 
 .Row{
+  display: flex;
   justify-content: center;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  width: 18rem;
+
 }
